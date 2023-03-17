@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="/style/style.css" media="all">
+    <link rel="stylesheet" href="style/media.css">
+    <title>Tela de Login</title>
+</head>
+
+<body class="pagina">
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h2>LOGO</h2>
+            </div>
+            <menu>
+                <ul>
+                    <li>Home</li>
+                    <li>Cadastre-se</li>
+                    <li>Ajuda</li>
+                </ul>
+            </menu>
+            <div class="login-btn">
+                <button>Login</button>
+            </div>
+            <div id="mobile-icon">
+                <span id="icon" class="material-symbols-outlined">menu</span>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li>Home</li>
+                <li>Cadastre-se</li>
+                <li>Ajuda</li>
+            </ul>
+            <div class="login-btn">
+                <button>Login</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Login</h1>
+            <form action="#">
+                <label for="usuario">Usuário</label>
+                <input type="text" name="usuario" id="usuario" required>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+                <input type="submit" value="Login">
+                <label for="loginAuto">Manter-me Conectado</label>
+                <input type="checkbox" name="loginauto" id="loginAuto">
+            </form>
+            <p>Ainda não tem Cadastro ? <a href="#">Clique Aqui</a></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

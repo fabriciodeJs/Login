@@ -1,0 +1,67 @@
+
+
+
+
+
+@media screen and (min-width: 700px) {
+    
+
+.nav-bar{
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo h2 {
+    color: #fff;
+}
+
+menu {
+    display: flex;
+    align-items: center;
+}
+
+menu ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    
+}
+ 
+ul li {
+    margin: 0 15px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #fff;
+}
+
+.login-btn button{
+    border: none;
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.login-btn button:hover{
+    background-color: #000000b6;
+    color: #fff;
+    transition: .5s;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-icon {
+    display: none;
+}
+
+#icon {
+    color: white;
+}
+}

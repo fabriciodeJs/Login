@@ -12,50 +12,40 @@
 </head>
 
 <body class="pagina">
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <h2>LOGO</h2>
-            </div>
-            <menu>
-                <ul>
-                    <li>Home</li>
-                    <li>Cadastre-se</li>
-                    <li>Ajuda</li>
-                </ul>
-            </menu>
-            <div class="login-btn">
-                <button>Login</button>
-            </div>
-            <div id="mobile-icon">
-                <span id="icon" class="material-symbols-outlined">menu</span>
-            </div>
-        </nav>
 
-        <div class="mobile-menu">
-            <ul>
-                <li>Home</li>
-                <li>Cadastre-se</li>
-                <li>Ajuda</li>
-            </ul>
-            <div class="login-btn">
+
+
+    <header>
+      <nav class="nav-bar">
+            <h2>LOGO</h2>
+            <span id="btn-menu"class="material-symbols-outlined">menu</span>
+        </nav>
+        <menu class="menu">
+                <a href="#">Home</a>
+                <a href="#">Cadastro</a>
+                <a href="#">Ajuda</a>
                 <button>Login</button>
-            </div>
-        </div>
+        </menu>
     </header>
+
+
+
+
     <main>
         <section>
             <h1>Login</h1>
             <form action="#">
-                <label for="usuario">Usuário</label>
-                <input type="text" name="usuario" id="usuario" required>
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha">
-                <input type="submit" value="Login">
-                <label for="loginAuto">Manter-me Conectado</label>
-                <input type="checkbox" name="loginauto" id="loginAuto">
+                <label class="label-input" for="usuario">Usuário</label>
+                <input type="text" class="input-text" name="usuario" id="usuario" required>
+                <label class="label-input" for="senha">Senha</label>
+                <input type="password" class="input-text" name="senha" id="senha">
+                <div class="conectado">
+                    <input class="checkbox" type="checkbox" name="loginauto" id="loginAuto">
+                    <label for="loginAuto">Manter-me Conectado</label>
+                </div>
+                <input class="btn-submit" type="submit" value="Login">
             </form>
-            <p>Ainda não tem Cadastro ? <a href="#">Clique Aqui</a></p>
+            <p>Não tem Cadastro ? <a href="#">Clique Aqui</a></p>
         </section>
     </main>
     <script src="script.js"></script>

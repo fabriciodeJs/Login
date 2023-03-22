@@ -1,12 +1,16 @@
 
 
-function menuLateral() {
-    const menuMobile = document.querySelector('#icon');
+const btnMenu = document.querySelector('#btn-menu');
+const menuMobile = document.querySelector('.menu');
 
-    if (imenuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
+
+btnMenu.addEventListener('click', (e) => {
+    if(menuMobile.style.display == 'none'){
+        menuMobile.style.display = 'flex'
     }else{
-        menuMobile.classList.add('open');
+        menuMobile.style.display = 'none';
     }
-}
+});
+
+
 

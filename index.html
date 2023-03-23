@@ -7,20 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style/style.css" media="all">
+    <link rel="stylesheet" href="style/media.css">
     <title>Tela de Login</title>
 </head>
 
-<body class="pagina">
+<body onresize="monitorar()" class="pagina">
     <header>
-      <nav class="nav-bar">
+        <nav class="nav-bar">
             <h2>LOGO</h2>
-            <span id="btn-menu"class="material-symbols-outlined">menu</span>
+            <span id="btn-menu" class="material-symbols-outlined">menu</span>
         </nav>
         <menu class="menu">
-                <a href="#">Home</a>
-                <a href="#">Cadastro</a>
-                <a href="#">Ajuda</a>
-                <button>Login</button>
+            <a href="#">Home</a>
+            <a href="#">Cadastro</a>
+            <a href="#">Ajuda</a>
+            <button>Login</button>
+        </menu>
+        <menu id="menu" style="display: none;" class="show-menu">
+            <a href="#">Home</a>
+            <a href="#">Cadastro</a>
+            <a href="#">Ajuda</a>
+            <button>Login</button>
         </menu>
     </header>
     <main>
@@ -40,7 +47,30 @@
             <p>Não tem Cadastro ? <a href="#">Clique Aqui</a></p>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script>
+        const btnMenu = document.querySelector('#btn-menu');
+        const tagMenu = document.querySelector('#menu');
+        const body = document.querySelector('.pagina');
+
+        btnMenu.addEventListener('click', (e) => {
+
+            if(tagMenu.style.display == 'none'){
+                tagMenu.style.display = 'flex';
+            }else{
+                tagMenu.style.display = 'none';
+            }
+        });
+
+        function monitorar() {
+           if(window.innerWidth >= 700){
+                tagMenu.style.display = 'none';
+           }
+
+
+        }
+
+
+    </script> 
 </body>
 
 </html>
